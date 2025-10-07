@@ -59,7 +59,7 @@ void next_char() {
         return;
     }
 
-    if (memcmp(command + command_index - strlen(DONE), DONE, strlen(DONE))) {
+    if (memcmp(command + command_index - strlen(DONE), DONE, strlen(DONE)) != 0) {
             return;
     }
 
